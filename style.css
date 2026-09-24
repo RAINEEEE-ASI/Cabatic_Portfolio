@@ -431,11 +431,11 @@ button, input, textarea {
 }
 
 .project-card {
-  min-height: 360px;
+  min-height: 440px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 28px;
+  overflow: hidden;
 }
 
 .project-one {
@@ -448,18 +448,34 @@ button, input, textarea {
   background: var(--orange);
 }
 
+.project-image {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  border-bottom: 1px solid color-mix(in srgb, var(--ink) 25%, transparent);
+}
+
+.project-details {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 20px;
+  padding: 24px 28px 28px;
+}
+
 .project-number {
   font: 12px 'DM Mono', monospace;
 }
 
 .project-card h3 {
-  margin: 16px 0 10px;
-  font-size: 40px;
+  margin: 12px 0 10px;
+  font-size: 34px;
   letter-spacing: -.05em;
 }
 
 .project-card p:not(.project-type) {
   max-width: 350px;
+  margin-bottom: 0;
   line-height: 1.6;
 }
 
