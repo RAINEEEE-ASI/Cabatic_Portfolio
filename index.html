@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="loading-screen" role="status" aria-live="polite" aria-label="Loading portfolio">
+        <div class="loading-content">
+            <p class="loading-kicker"><span>LORRAINE CABATIC</span><span>PORTFOLIO / 01</span></p>
+            <p class="loading-title">DECODING<br><span>DATA</span></p>
+            <div class="loading-track" aria-hidden="true"><span class="loading-progress"></span></div>
+            <div class="loading-meta"><span>INITIALIZING ARCHIVE</span><span aria-hidden="true">0101 / 1010</span></div>
+        </div>
+    </div>
+    <canvas class="binary-background" aria-hidden="true"></canvas>
+    <header class="site-header">
+    <nav>
+        <div class="nav-links">
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+            <button class="theme-toggle" type="button" aria-label="Switch to light mode" aria-pressed="false" title="Toggle light and dark mode">
+                <span class="theme-icon" aria-hidden="true">☼</span>
+                <span class="theme-label">Light mode</span>
+            </button>
+        </div>
+    </nav>
+    </header>
+
+    <main>
+        <section class="home container" id="home">
+            <div class="home-copy reveal">
+                <p class="eyebrow">// Aspiring Computer Forensic Analyst | Web Developer</p>
+                <div><p class="hello"> Hi! I'm </p>
+                <h1><em>Lorraine</em> Lasi Cabatic</h1></div>
+                <p class="home-intro">I’m a Computer Science student with a passion for uncovering the story behind every data.</p>
+                <div class="binary-boxes" aria-hidden="true">
+                    <span>DOST SEI SCHOLAR 2025</span>
+                    <span>2ND YEAR COMPUTER SCIENCE</span>
+                </div>
+                
+                <div class="home-actions">
+                    <a class="button button-primary" href="#projects">View my work <span>↗</span></a>
+                    <a class="text-link" href="#contact">Let’s talk <span>→</span></a>
+                </div>
+                <p class="status"><span class="pulse"></span> currently learning & building</p>
+            </div>
+            <div class="home-visual reveal">
+                <div class="image-frame"><img src="Profile.jpg" alt="Portrait placeholder for Lorraine Cabatic"></div>
+                <div class="visual-tag tag-top">01 / profile</div>
+                <div class="visual-tag tag-bottom">creative mind<br><span>+ logical heart</span></div>
+            </div>
+        </section>
+        <section class="about section" id="about">
+            <div class="container">
+                <div class="section-label"><span>01</span><span>about me</span></div>
+                <div class="about-grid">
+                    <div class="about-heading">
+                        <h2>People first.<br><em>Always.</em></h2>
+                        <blockquote class="about-quote"><p>“I believe great digital work is clear, purposeful, and built to uncover the truth behind the data.”</p></blockquote>
+                    </div>
+                    <div class="about-copy">
+                        <p>I'm a 2nd year Computer Science student and DOST SEI Scholar at Lipa City Colleges, working toward becoming a Software Developer or a Computer Forensic Analyst.</p>
+                        <p>Outside the classroom, I'm usually reading, watching crime documentaries, or playing games like chess and mobile games — habits that keep my curiosity sharp and my eye for detail even sharper. I'm always looking for the next challenge to learn from.</p>
+                        <a class="text-link" href="#education">More about my journey <span>→</span></a>
+                    </div>
+                    <div class="experience-photos" aria-label="Memorable experiences">
+                        <figure class="experience-photo-frame"><div class="experience-photo-placeholder" role="img" aria-label="Memorable experience photo placeholder 1"></div></figure>
+                        <figure class="experience-photo-frame"><div class="experience-photo-placeholder" role="img" aria-label="Memorable experience photo placeholder 2"></div></figure>
+                        <figure class="experience-photo-frame"><div class="experience-photo-placeholder" role="img" aria-label="Memorable experience photo placeholder 3"></div></figure>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="education section container" id="education">
+            <div class="section-label"><span>02</span><span>educational background</span></div>
+            <div class="education-heading"><h2>Where I<br><em>learned.</em></h2><p>My academic journey has shaped my curiosity, discipline, and interest in technology.</p></div>
+            <div class="education-cards">
+                <button class="education-card" type="button" data-open-dialog="education-dialog" aria-haspopup="dialog">
+                    <span class="education-photo-slot" role="img" aria-label="Education photo placeholder"></span>
+                    <span class="education-card-copy"><span class="education-card-kicker">Academic record</span><strong>Education</strong><span>Four schools · 2013–2025</span></span>
+                    <span class="education-card-arrow" aria-hidden="true">↗</span>
+                </button>
+                <button class="education-card" type="button" data-open-dialog="achievements-dialog" aria-haspopup="dialog">
+                    <span class="education-photo-slot achievement-photo-slot" role="img" aria-label="Achievement photo placeholder"></span>
+                    <span class="education-card-copy"><span class="education-card-kicker">Highlights</span><strong>Achievements</strong><span>Academic, leadership, and community</span></span>
+                    <span class="education-card-arrow" aria-hidden="true">↗</span>
+                </button>
+                <button class="education-card" type="button" data-open-dialog="certificates-dialog" aria-haspopup="dialog">
+                    <span class="education-photo-slot certificate-photo-slot" role="img" aria-label="Certificate photo placeholder"></span>
+                    <span class="education-card-copy"><span class="education-card-kicker">Credentials</span><strong>Certificates</strong><span>Courses and certifications</span></span>
+                    <span class="education-card-arrow" aria-hidden="true">↗</span>
+                </button>
+            </div>
+
+            <dialog class="education-dialog" id="education-dialog" aria-labelledby="education-dialog-title">
+                <div class="education-dialog-panel">
+                    <div class="education-dialog-heading">
+                        <div><p class="education-card-kicker">Academic record</p><h2 id="education-dialog-title">Education</h2></div>
+                        <button class="education-dialog-close" type="button" aria-label="Close education details">×</button>
+                    </div>
+                    <div class="education-dialog-content">
+                        <div class="education-dialog-media">
+                            <div class="education-gallery" data-gallery role="region" aria-label="Education photos">
+                                <div class="education-gallery-track" tabindex="0" aria-label="Swipe or scroll through education photos">
+                                    <div class="education-gallery-slide" role="img" aria-label="Education photo 1 placeholder"></div>
+                                    <div class="education-gallery-slide" role="img" aria-label="Education photo 2 placeholder"></div>
+                                    <div class="education-gallery-slide" role="img" aria-label="Education photo 3 placeholder"></div>
+                                </div>
+                                <div class="education-gallery-controls">
+                                    <button class="education-gallery-arrow" type="button" data-gallery-previous aria-label="Previous education photo" title="Previous photo">←</button>
+                                    <div class="education-gallery-dots" role="group" aria-label="Education photo pages">
+                                        <button class="education-gallery-dot" type="button" data-gallery-page="0" aria-label="Show education photo 1" aria-current="true"></button>
+                                        <button class="education-gallery-dot" type="button" data-gallery-page="1" aria-label="Show education photo 2"></button>
+                                        <button class="education-gallery-dot" type="button" data-gallery-page="2" aria-label="Show education photo 3"></button>
+                                    </div>
+                                    <button class="education-gallery-arrow" type="button" data-gallery-next aria-label="Next education photo" title="Next photo">→</button>
+                                </div>
+                            </div>
+                            <p class="education-dialog-description">A record of my studies from elementary through senior high school, including the schools and milestones that shaped my path in computer science.</p>
+                        </div>
+                        <div class="education-dialog-list">
+                            <article class="education-item"><span class="education-years">2013–2019</span><div><h3>Elementary</h3><p>Sto. Toribio Elementary School</p></div></article>
+                            <article class="education-item"><span class="education-years">2019–2021</span><div><h3>Junior High School</h3><p>The Mabini Academy</p></div></article>
+                            <article class="education-item"><span class="education-years">2021–2023</span><div><h3>Junior High School</h3><p>San Celestino Integrated National High School</p><small>Graduated among the top 5</small></div></article>
+                            <article class="education-item"><span class="education-years">2023–2025</span><div><h3>Senior High School</h3><p>San Celestino Integrated National High School</p><small>Graduated among the top 5</small></div></article>
+                        </div>
+                    </div>
+                </div>
+            </dialog>
+
+            <dialog class="education-dialog" id="achievements-dialog" aria-labelledby="achievements-dialog-title">
+                <div class="education-dialog-panel">
+                    <div class="education-dialog-heading">
+                        <div><p class="education-card-kicker">Highlights</p><h2 id="achievements-dialog-title">Achievements</h2></div>
+                        <button class="education-dialog-close" type="button" aria-label="Close achievement details">×</button>
+                    </div>
+                    <div class="education-dialog-content">
+                        <div class="education-dialog-media">
+                            <div class="education-gallery" data-gallery role="region" aria-label="Achievement photos">
+                                <div class="education-gallery-track" tabindex="0" aria-label="Swipe or scroll through achievement photos">
+                                    <div class="education-gallery-slide" role="img" aria-label="Achievement photo 1 placeholder"></div>
+                                    <div class="education-gallery-slide" role="img" aria-label="Achievement photo 2 placeholder"></div>
+                                    <div class="education-gallery-slide" role="img" aria-label="Achievement photo 3 placeholder"></div>
+                                </div>
+                                <div class="education-gallery-controls">
+                                    <button class="education-gallery-arrow" type="button" data-gallery-previous aria-label="Previous achievement photo" title="Previous photo">←</button>
+                                    <div class="education-gallery-dots" role="group" aria-label="Achievement photo pages">
+                                        <button class="education-gallery-dot" type="button" data-gallery-page="0" aria-label="Show achievement photo 1" aria-current="true"></button>
+                                        <button class="education-gallery-dot" type="button" data-gallery-page="1" aria-label="Show achievement photo 2"></button>
+                                        <button class="education-gallery-dot" type="button" data-gallery-page="2" aria-label="Show achievement photo 3"></button>
+                                    </div>
+                                    <button class="education-gallery-arrow" type="button" data-gallery-next aria-label="Next achievement photo" title="Next photo">→</button>
+                                </div>
+                            </div>
+                            <p class="education-dialog-description">Academic honors, student leadership, and competition milestones from my years in school and college.</p>
+                        </div>
+                        <div class="achievement-dialog-list">
+                            <article class="achievement-item"><span>2026–2027</span><p>JPCS – LCC Chapter Secretary</p></article>
+                            <article class="achievement-item"><span>2025–2026</span><p>2nd Semester Dean’s Lister</p></article>
+                            <article class="achievement-item"><span>2021–2025</span><p>Consistent Honor Student</p></article>
+                            <article class="achievement-item"><span>2024–2025</span><p>Math Club President</p></article>
+                            <article class="achievement-item"><span>2023–2025</span><p>Student Athlete</p></article>
+                            <article class="achievement-item"><span>2023</span><p>ADL Young Master’s Quiz Bee Season 4 – 3rd Place</p></article>
+                            <article class="achievement-item"><span>2021</span><p>Math Oral Competition Champion, Grade 9 Level</p></article>
+                        </div>
+                    </div>
+                </div>
+            </dialog>
+
+            <dialog class="education-dialog" id="certificates-dialog" aria-labelledby="certificates-dialog-title">
+                <div class="education-dialog-panel">
+                    <div class="education-dialog-heading">
+                        <div><p class="education-card-kicker">Credentials</p><h2 id="certificates-dialog-title">Certificates</h2></div>
+                        <button class="education-dialog-close" type="button" aria-label="Close certificate details">×</button>
+                    </div>
+                    <div class="education-dialog-media certificate-dialog-media">
+                        <div class="education-gallery" data-gallery role="region" aria-label="Certificate photos">
+                            <div class="education-gallery-track" tabindex="0" aria-label="Swipe or scroll through certificate photos">
+                                <div class="education-gallery-slide certificate-gallery-slide" role="img" aria-label="Certificate photo 1 placeholder"></div>
+                                <div class="education-gallery-slide certificate-gallery-slide" role="img" aria-label="Certificate photo 2 placeholder"></div>
+                                <div class="education-gallery-slide certificate-gallery-slide" role="img" aria-label="Certificate photo 3 placeholder"></div>
+                            </div>
+                            <div class="education-gallery-controls">
+                                <button class="education-gallery-arrow" type="button" data-gallery-previous aria-label="Previous certificate photo" title="Previous photo">←</button>
+                                <div class="education-gallery-dots" role="group" aria-label="Certificate photo pages">
+                                    <button class="education-gallery-dot" type="button" data-gallery-page="0" aria-label="Show certificate photo 1" aria-current="true"></button>
+                                    <button class="education-gallery-dot" type="button" data-gallery-page="1" aria-label="Show certificate photo 2"></button>
+                                    <button class="education-gallery-dot" type="button" data-gallery-page="2" aria-label="Show certificate photo 3"></button>
+                                </div>
+                                <button class="education-gallery-arrow" type="button" data-gallery-next aria-label="Next certificate photo" title="Next photo">→</button>
+                            </div>
+                        </div>
+                        <p class="education-dialog-description">A collection of certificates and course credentials from my ongoing learning.</p>
+                    </div>
+                </div>
+            </dialog>
+        </section>
+
+        <section class="skills section" id="skills">
+            <div class="container">
+                <div class="section-label"><span>03</span><span>toolkit</span></div>
+                <h2>A growing set of<br><em>useful tools.</em></h2>
+                <div class="toolkit-groups">
+                    <div class="toolkit-group">
+                        <h3><span>01</span>Languages</h3>
+                        <div class="toolkit-items">
+                            <div class="skill-item"><span>02</span><div><strong>PHP</strong><small>server / applications</small></div></div>
+                            <div class="skill-item"><span>04</span><div><strong>JavaScript</strong><small>logic / interaction</small></div></div>
+                            <div class="skill-item"><span>05</span><div><strong>Python</strong><small>logic / automation</small></div></div>
+                            <div class="skill-item"><span>10</span><div><strong>SQL</strong><small>query / data</small></div></div>
+                        </div>
+                    </div>
+                    <div class="toolkit-group">
+                        <h3><span>02</span>Frontend</h3>
+                        <div class="toolkit-items">
+                            <div class="skill-item"><span>03</span><div><strong>HTML &amp; CSS</strong><small>structure / style</small></div></div>
+                            <div class="skill-item"><span>09</span><div><strong>Website Development</strong><small>build / publish</small></div></div>
+                        </div>
+                    </div>
+                    <div class="toolkit-group">
+                        <h3><span>03</span>Backend &amp; Data</h3>
+                        <div class="toolkit-items">
+                            <div class="skill-item"><span>01</span><div><strong>Database Design &amp; Development</strong><small>structure / data</small></div></div>
+                            <div class="skill-item"><span>06</span><div><strong>Web-to-Database Integration</strong><small>connect / build</small></div></div>
+                            <div class="skill-item"><span>11</span><div><strong>Supabase</strong><small>database / backend</small></div></div>
+                        </div>
+                    </div>
+                    <div class="toolkit-group">
+                        <h3><span>04</span>Tools &amp; Practices</h3>
+                        <div class="toolkit-items">
+                            <div class="skill-item"><span>07</span><div><strong>Git &amp; GitHub</strong><small>learning / collaborate</small></div></div>
+                            <div class="skill-item"><span>08</span><div><strong>Canva</strong><small>design / create</small></div></div>
+                            <div class="skill-item"><span>12</span><div><strong>VS Code</strong><small>editor / workflow</small></div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="projects section container" id="projects">
+            <div class="section-label"><span>04</span><span>Projects</span></div>
+            <div class="projects-heading"><h2>Ideas made<br><em>real.</em></h2></div>
+            <div class="project-grid">
+                <article class="project-card project-one" tabindex="0" role="button" aria-haspopup="dialog" aria-label="Open LCC Payroll System details" data-open-dialog="payroll-project-dialog">
+                    <img class="project-image" src="Payrollsys.png" alt="LCC Payroll System employee payroll dashboard interface">
+                    <div class="project-details">
+                        <div class="project-number">01</div>
+                        <div><p class="project-type">web app / 2024</p><h3>LCC Payroll System</h3><p>An employee payroll dashboard for managing staff records, departments, loans, and payroll information.</p></div>
+                    </div>
+                </article>
+                <article class="project-card project-two" tabindex="0" role="button" aria-haspopup="dialog" aria-label="Open BHW Records details" data-open-dialog="bhw-project-dialog">
+                    <img class="project-image" src="bhw.png" alt="Barangay e-Health Records resident registration interface">
+                    <div class="project-details">
+                        <div class="project-number">02</div>
+                        <div><p class="project-type">web app / 2024</p><h3>BHW Records</h3><p>A barangay health records system for registering residents and organizing community health information.</p></div>
+                    </div>
+                </article>
+            </div>
+            <dialog class="education-dialog project-dialog" id="payroll-project-dialog" aria-labelledby="payroll-project-title">
+                <div class="education-dialog-panel">
+                    <div class="education-dialog-heading">
+                        <div><p class="education-card-kicker">Web app / 2024</p><h2 id="payroll-project-title">LCC Payroll System</h2></div>
+                        <button class="education-dialog-close" type="button" aria-label="Close LCC Payroll System details">×</button>
+                    </div>
+                    <img class="project-dialog-image" src="Payrollsys.png" alt="LCC Payroll System employee payroll dashboard">
+                    <p class="project-dialog-description">A payroll dashboard for managing employee records, departments, loans, and payroll information.</p>
+                </div>
+            </dialog>
+            <dialog class="education-dialog project-dialog" id="bhw-project-dialog" aria-labelledby="bhw-project-title">
+                <div class="education-dialog-panel">
+                    <div class="education-dialog-heading">
+                        <div><p class="education-card-kicker">Web app / 2024</p><h2 id="bhw-project-title">BHW Records</h2></div>
+                        <button class="education-dialog-close" type="button" aria-label="Close BHW Records details">×</button>
+                    </div>
+                    <img class="project-dialog-image" src="bhw.png" alt="Barangay e-Health Records resident registration interface">
+                    <p class="project-dialog-description">A barangay health records system for registering residents and organizing community health information.</p>
+                </div>
+            </dialog>
+        </section>
+
+        <button class="chat-launcher" type="button" aria-label="Open Lorraine's assistant" aria-controls="chat-modal" aria-expanded="false"><span class="chat-launcher-icon">✦</span><span>Ask me</span></button>
+        <div class="chat-modal" id="chat-modal" role="dialog" aria-labelledby="chat-title" hidden>
+            <div class="chat-dialog">
+                <div class="chat-dialog-heading">
+                    <div>
+                        <p class="chat-kicker"><span class="online-dot"></span> lorraine_bot <span class="chat-status">online</span></p>
+                        <h2 id="chat-title">Ask me anything.</h2>
+                    </div>
+                    <button class="chat-close" type="button" aria-label="Close assistant" data-close-chat>×</button>
+                </div>
+                <p class="chat-dialog-intro">I can tell you about Lorraine's studies, skills, and contact details.</p>
+                <div class="chat-window">
+                    <div class="chat-messages" aria-live="polite">
+                        <div class="bot-message">Hi! I’m Lorraine’s mini assistant. What would you like to know?</div>
+                    </div>
+                    <div class="quick-questions">
+                        <button type="button" data-question="What do you study?">What do you study?</button>
+                        <button type="button" data-question="What are your skills?">Your skills?</button>
+                        <button type="button" data-question="How can I contact you?">Contact details?</button>
+                    </div>
+                    <form class="chat-form">
+                        <input type="text" placeholder="Ask me something..." aria-label="Ask about Lorraine">
+                        <button type="submit" aria-label="Send question">↑</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <section class="contact section" id="contact"><div class="container contact-grid">
+            <div>
+                <div class="section-label">
+                    <span>05</span><span>get in touch</span>
+                </div>
+                <h2>Let’s make<br><em>something useful.</em></h2>
+                <p>Have a project, question, or just want to say hello? My inbox is open.</p>
+                <a class="email" href="mailto:lorrainecabatic.aine@gmail.com">lorrainecabatic.aine@gmail.com <span>↗</span></a>
+                <div class="socials">
+                    <a class="github-link" href="https://github.com/RAINEEEE-ASI" target="_blank" rel="noreferrer"><img class="social-logo" src="github.png" alt=""> GitHub ↗</a>
+                    <a class="linkedin-link" href="https://www.linkedin.com/in/lorraine-cabatic-2728a6435/" target="_blank" rel="noreferrer"><img class="social-logo" src="linkedin.png" alt=""> LinkedIn ↗</a>
+                    <a class="instagram-link" href="https://www.instagram.com/aine_asi/" target="_blank" rel="noreferrer"><img class="social-logo" src="instagram.png" alt=""> Instagram ↗</a>
+                </div>
+            </div>
+            <form class="contact-form">
+                <label for="name">Your name</label>
+                <input id="name" type="text" placeholder="First Name Last Name" required>
+                <label for="email">Your email</label>
+                <input id="email" type="email" placeholder="Rain@gmail.com" required>
+                <label for="message">Your message</label>
+                <textarea id="message" rows="4" placeholder="Tell me a little about your idea..." required></textarea>
+                <button class="button button-primary" type="submit">Send message <span>↗</span></button>
+                <p class="form-note" aria-live="polite"></p>
+            </form>
+        </div>
+    </section>
+    </main>
+    <footer class="footer container">
+    <span>©2026 Lorraine Lasi Cabatic</span>
+    <span>designed & built with curiosity</span>
+    <a href="#home">back to top ↑</a>
+</footer>
+</body>
+</html>
